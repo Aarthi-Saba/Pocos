@@ -7,13 +7,12 @@ using System.Text;
 namespace CareerCloud.Pocos
 {
     [Table("Company_Profiles")]
-    class CompanyProfilePoco : IPoco
+    public class CompanyProfilePoco : IPoco
     {
         [Key]
         public Guid Id { get; set; }
         [Column("Registration_Date")]
         public DateTime RegistrationDate { get; set; }
-
         [Column("Company_Website")]
         public string CompanyWebsite { get; set; }
         [Column("Contact_Phone")]
